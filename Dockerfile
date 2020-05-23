@@ -3,6 +3,7 @@ FROM node:12
 # Create app directory
 WORKDIR /usr/src/app
 
+RUN npm install -g serve
 
 COPY package*.json ./
 RUN npm i
@@ -11,4 +12,4 @@ RUN npm run build
 
 ENV NODE_ENV production
 EXPOSE 3000
-CMD [ "node", "build/index.js" ]
+CMD serve -s build
