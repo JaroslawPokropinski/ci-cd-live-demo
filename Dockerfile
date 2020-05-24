@@ -6,8 +6,9 @@ WORKDIR /usr/src/app
 RUN npm install -g serve
 
 COPY package*.json ./
-RUN npm i
+RUN npm ci
 COPY . .
+RUN npm run test:nowatch
 RUN npm run build
 
 ENV NODE_ENV production
