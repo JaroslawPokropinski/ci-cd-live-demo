@@ -8,8 +8,8 @@ test('renders how is ci / cd', () => {
   expect(howIsCi).not.toBe(null);
 });
 
-// test('renders that ci is awesome', () => {
-//   const { container  } = render(<App />);
-//   const howIsCi = container.querySelector('.how-is-ci');
-//   expect(howIsCi.textContent).toBe('Awesome');
-// });
+test('renders that ci is awesome', () => {
+  const { container  } = render(<App />);
+  const howIsCi = container.querySelector('.how-is-ci');
+  expect(howIsCi.textContent).toBe('TEST');
+});
