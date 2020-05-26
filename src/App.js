@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 
 function App() {
-  const howIsCi = 'TODO'; // TODO: change this line
+  const howIsCi = 'Awesome';
   return (
     <div className="App">
       <header className="App-header">
